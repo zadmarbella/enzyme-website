@@ -73,9 +73,11 @@ body {
  * Jon
  */
 .lead {
-  text-align: left;
+  text-align: center;
+  font-size: 20pt !important;
 }
 .enz-linkbutton {
   width: 200px;
   margin: 10px;
 }
+
