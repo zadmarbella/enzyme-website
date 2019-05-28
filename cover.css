@@ -20,6 +20,8 @@ a:hover {
 }
 
 
+
+
 /*
  * Base structure
  */
@@ -79,5 +81,14 @@ body {
 .enz-linkbutton {
   width: 200px;
   margin: 10px;
+}
+
+/* Custom default button */
+.btn-firefox,
+.btn-firefox:hover,
+.btn-firefox:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #FFEC4A;
 }
 
