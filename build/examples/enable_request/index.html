@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Enzyme Wallet Docs</title>
+    <meta name="description" content="Enzyme Wallet Description from config.js">
+    <link rel="css" href="/copy-to-clip.js">
+  <script src="/copy-to-clip.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.16/clipboard.min.js"></script>
+    
+    <link rel="preload" href="/assets/css/0.styles.54851b14.css" as="style"><link rel="preload" href="/assets/js/app.60fdc378.js" as="script"><link rel="preload" href="/assets/js/2.4fb2f51e.js" as="script"><link rel="preload" href="/assets/js/5.188a6d97.js" as="script"><link rel="prefetch" href="/assets/js/10.394526ae.js"><link rel="prefetch" href="/assets/js/11.25c37429.js"><link rel="prefetch" href="/assets/js/3.5dd9c19c.js"><link rel="prefetch" href="/assets/js/4.246efe80.js"><link rel="prefetch" href="/assets/js/6.3fe7f1c8.js"><link rel="prefetch" href="/assets/js/7.acebf7db.js"><link rel="prefetch" href="/assets/js/8.5ca6a5e1.js"><link rel="prefetch" href="/assets/js/9.19b2f791.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.54851b14.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Enzyme Wallet Docs</span></a> <div class="links"><!----> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://blockxlabs.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  BlockX Labs
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Documentation" class="dropdown-title"><span class="title">Documentation</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/examples/create_account/" class="nav-link">Initial Setup</a></li><li class="dropdown-item"><!----> <a href="/examples/enable_request/" class="nav-link router-link-exact-active router-link-active">Enable DApp</a></li><li class="dropdown-item"><!----> <a href="/examples/send_transaction/" class="nav-link">Send Transaction</a></li><li class="dropdown-item"><!----> <a href="/examples/sign_message/" class="nav-link">Sign Message</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/blockxlabs/universal-wallet" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://blockxlabs.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  BlockX Labs
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Documentation" class="dropdown-title"><span class="title">Documentation</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/examples/create_account/" class="nav-link">Initial Setup</a></li><li class="dropdown-item"><!----> <a href="/examples/enable_request/" class="nav-link router-link-exact-active router-link-active">Enable DApp</a></li><li class="dropdown-item"><!----> <a href="/examples/send_transaction/" class="nav-link">Send Transaction</a></li><li class="dropdown-item"><!----> <a href="/examples/sign_message/" class="nav-link">Sign Message</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/blockxlabs/universal-wallet" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/examples/" class="sidebar-heading clickable router-link-active open"><span>Examples</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/examples/create_account/" class="sidebar-link">Initial Setup</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/examples/create_account/#create-account" class="sidebar-link">Create Account</a></li><li class="sidebar-sub-header"><a href="/examples/create_account/#dashboard" class="sidebar-link">Dashboard</a></li><li class="sidebar-sub-header"><a href="/examples/create_account/#account-management" class="sidebar-link">Account Management</a></li><li class="sidebar-sub-header"><a href="/examples/create_account/#address-book" class="sidebar-link">Address Book</a></li><li class="sidebar-sub-header"><a href="/examples/create_account/#receive" class="sidebar-link">Receive</a></li><li class="sidebar-sub-header"><a href="/examples/create_account/#send" class="sidebar-link">Send</a></li></ul></li><li><a href="/examples/enable_request/" class="active sidebar-link">Enable Request</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/examples/enable_request/#javascript" class="sidebar-link">Javascript</a></li></ul></li><li><a href="/examples/send_transaction/" class="sidebar-link">Send Transaction</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/examples/send_transaction/#javascript" class="sidebar-link">Javascript</a></li></ul></li><li><a href="/examples/sign_message/" class="sidebar-link">Sign Message</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/examples/sign_message/#javascript" class="sidebar-link">Javascript</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><p>$(window).on('pageLoad', function(e, state) {
+$('pre code').each(function() {
+var code = $(this);
+code.after('<span class="copy-to-clipboard">Copy</span>');
+code.on('mouseenter', function() {
+var copyBlock = $(this).next('.copy-to-clipboard');
+copyBlock.addClass('copy-active');
+});
+code.on('mouseleave', function() {
+var copyBlock = $(this).next('.copy-to-clipboard');
+copyBlock.removeClass('copy-active');
+copyBlock.html(&quot;Copy&quot;);
+});
+});</p> <pre><code>  var text, clip = new Clipboard('.copy-to-clipboard', {
+    text: function(trigger) {
+      return $(trigger).prev('code').text();
+    }
+  });
+
+  clip.on('success', function(e) {
+    e.clearSelection();
+    console.log(&quot;copied!&quot;);
+    $(e.trigger).html(&quot;Copied!&quot;);
+  });
+
+  clip.on('error', function(e) {
+    console.log(&quot;error: &quot; + e);
+  });
+</code></pre> <p>});</p> <p>pre .copy-to-clipboard {
+position: absolute;
+right: 0px;
+top: 0px;
+background-color: #4d5257;
+color: #ccc;
+border-radius: 2px;
+width: 80px;
+height: 30px;
+text-transform: uppercase;
+letter-spacing: 1px;
+text-align: center;
+vertical-align: middle;
+padding-top: 6px;
+font-size: 14px;
+opacity: 0.25
+}</p> <p>.copy-active, pre .copy-to-clipboard:hover  {
+/* todo this isn't right... */
+opacity: 1 !important;
+}</p> <p>.copy-to-clipboard:hover {
+cursor: pointer;
+}
+.block-code-code pre {
+position: relative;
+}</p> <h1 id="enable-request"><a href="#enable-request" class="header-anchor">#</a> Enable Request</h1> <p>When Enzyme extension is accessed by DApp due to security reasons user must go through Enable request allowing DApps access to Blockchain and related accounts</p> <h2 id="javascript"><a href="#javascript" class="header-anchor">#</a> Javascript</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>import { web3Enable } from '@polkadot/extension-dapp';
+
+// returns an array of all the injected sources
+// (this needs to be called first, before other requests)
+// It will open the extension for authorization
+const allInjected = await web3Enable('my cool dapp');
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><img src="/assets/img/enable-request.2797f139.png" width="300"> <p>You can allow or reject to authorized dApp. Once you allow you can call following web3Accounts() to get all the accounts.</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import { web3Accounts } from '@polkadot/extension-dapp';
+
+// returns an array of { address, meta: { name, source } }
+// meta.name contains the alias of this account
+// meta.source contains the name of the extension that provides this account
+const allAccounts = await web3Accounts();
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/examples/create_account/" class="prev">Initial Setup</a></span> <span class="next"><a href="/examples/send_transaction/">Send Transaction</a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.60fdc378.js" defer></script><script src="/assets/js/2.4fb2f51e.js" defer></script><script src="/assets/js/5.188a6d97.js" defer></script>
+  </body>
+</html>
